@@ -6,7 +6,7 @@ const staticPath=path.join(__dirname,"../public");
 const viewsPath=path.join(__dirname,"../templates/views");
 const partialsPath=path.join(__dirname,"../templates/partials");
 const fetch=require("node-fetch");
-const port=process.env.Port || 8000;
+const port=process.env.Port ;
 
 
 app.use(express.static(staticPath))
