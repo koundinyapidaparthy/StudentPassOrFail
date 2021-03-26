@@ -6,7 +6,7 @@ const staticPath=path.join(__dirname,"../public");
 const viewsPath=path.join(__dirname,"../templates/views");
 const partialsPath=path.join(__dirname,"../templates/partials");
 const fetch=require("node-fetch");
-const port=process.env.Port ;
+const PORT=process.env.PORT ;
 
 
 app.use(express.static(staticPath))
@@ -55,4 +55,4 @@ app.post("/details",async(req, res)=>{
     catch(e){console.log(e)}
 })
 
-app.listen(port,()=>{console.log("successfully started")})
+app.listen(PORT,()=>{console.log("successfully started")})
